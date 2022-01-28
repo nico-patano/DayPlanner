@@ -6,25 +6,20 @@ $("#currentDay").text(today.format("dddd, MMM do, YYYY"));
 // save button local storage
 
 $(".time-block").each(function () {
-let saveButton = $(this).find('#saveButton');
-let impValue = $(this).find('#impValue');
-
-$(saveButton).click(function () {
+  let saveButton = $(this).find('#saveButton');
+  let impValue = $(this).find('#impValue');
   
-  localStorage.setItem("mycat","kai")
-  console.log(impValue);
-}) 
-localStorage.getItem(9);
-localStorage.getItem(10);
-localStorage.getItem(11);
-localStorage.getItem(12);
-localStorage.getItem(13);
-localStorage.getItem(14);
-localStorage.getItem(15);
-localStorage.getItem(16);
-localStorage.getItem(17);
+  $(saveButton).click(function () {
+    
+    localStorage.setItem('inputBox', impValue.val());
+    let saveInput = localStorage.getItem('inputBox')
+
+  });
 });
- 
+
+// code to push saved storage to text area
+
+
 
 //area color change using jquery
 
