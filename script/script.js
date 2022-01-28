@@ -1,7 +1,6 @@
 // displays current date under main heading
 let today = moment();
 $("#currentDay").text(today.format("dddd, MMM do, YYYY"));
-//
 
 // save button local storage
 
