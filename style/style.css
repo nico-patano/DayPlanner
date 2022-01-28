@@ -25,9 +25,11 @@ textarea {
   white-space: pre-wrap;
 }
 
-.time-block {
+.time-block, div {
   text-align: center;
   border-radius: 15px;
+  color: black;
+  font-weight: bold;
 }
 
 .row {
